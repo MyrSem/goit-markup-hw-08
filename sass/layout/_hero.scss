@@ -1,52 +1,58 @@
-// .hero {
-//     padding-top: 200px;
-//     padding-bottom: 200px;
+.hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/imgcover_mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    text-align: center;
+}
 
-//     background-color: #c4c4c4;
-//     background-image: linear-gradient(
-//             rgba(47, 48, 58, 0.4),
-//             rgba(47, 48, 58, 0.4)
-//         ),
-//         url('../images/imgcover.jpg');
-//     background-repeat: no-repeat;
-//     background-position: 50% 50%;
-//     max-width: 1600px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     background-size: cover;
-//     text-align: center;
-// }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url('../images/imgcover_mobile@2x.jpg');
+  }
+}
 
-// .hero__title {
-//     display: block;
-//     margin-bottom: 30px;
+.hero__title {
+    display: block;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
 
-//     font-weight: 900;
-//     font-size: 44px;
-//     line-height: 1.36;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-//     color: var(--white-color);
-// }
+.hero__btn {
+    display: inline-block;
+    border: inherit;
+    border-radius: 4px;
+    padding: 10px 32px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-// .hero__btn {
-//     display: inline-block;
-//     border: inherit;
-//     border-radius: 4px;
-//     padding: 10px 32px;
-//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    background-color: var(--brand-color);
 
-//     font-family: inherit;
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 1.87;
-//     align-items: center;
-//     letter-spacing: 0.06em;
-//     color: var(--white-color);
-//     background-color: var(--brand-color);
-
-//     &:hover,
-//     &:focus {
-//     background-color: var(--secondary-brand-color);
-// }
-// }
+    &:hover,
+    &:focus {
+    background-color: var(--secondary-brand-color);
+}
+}
