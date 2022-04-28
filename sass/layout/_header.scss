@@ -157,13 +157,13 @@ color: var(--brand-color);
         }
         
         .auth-nav {
-        // margin-left: auto;
         font-weight: 500;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.02em;
-        }
+    }
 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         .auth-nav__item:not(:last-child) {
             margin-bottom: 10px;
         }
@@ -175,12 +175,22 @@ color: var(--brand-color);
         .auth-nav__item_tel {
             margin-left: 102px;
         }
+    }
 
-        // .auth-nav__item {
-        // & + & {
-        // margin-left: 50px;
-        // }
-        // }
+        @media screen and (min-width: 1200px) {
+            .auth-nav {
+                display: flex;
+            margin-left: auto;
+            font-size: 14px;
+        line-height: 1.14;
+        }
+
+        .auth-nav__item {
+            & + & {
+            margin-left: 50px;
+            }
+            }
+        }
         
         .site-nav__link {
         position: relative;

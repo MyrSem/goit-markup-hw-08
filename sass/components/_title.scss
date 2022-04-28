@@ -8,19 +8,16 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--primary-text-color);
+
+@media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+}
 }
 
+@media screen and (max-width: 1199px) {
 .companies__title {
     margin-bottom: 15px;
 }
-
-// {
-//     margin-bottom: 50px;
-
-//     font-weight: 700;
-//     font-size: 36px;
-//     line-height: 1.17;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     color: var(--primary-text-color);
-// }
+}

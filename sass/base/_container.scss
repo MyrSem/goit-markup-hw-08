@@ -12,7 +12,13 @@
     @media screen and (min-width: 768px) {
         margin-left: auto;
     margin-right: auto;
-    width: 768px;
+    width: 738px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 1170px;
     }
 }
 
@@ -20,6 +26,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+        justify-content: flex-start;
+    }
 }
 
 .mobile-menu__container {
@@ -28,21 +38,9 @@
     padding-bottom: 48px;
 }
 
-.section_no-padding-top {
-    display: none;
+@media screen and (min-width: 1200px) {
+.footer__container {
+    display: flex;
+    align-items: baseline;
 }
-
-.portfolio__container {
-    margin: -15px;
 }
-
-// .about__container,
-// .team__container {
-//     padding-left: 15px;
-//     padding-right: 15px;
-// }
-
-// .footer__container {
-//     // display: flex;
-//     // align-items: baseline;
-// }

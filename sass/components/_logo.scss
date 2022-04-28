@@ -13,15 +13,17 @@ color: var(--black-color);
         padding-top: 26px;
         padding-bottom: 26px;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+        font-size: 26px;
+    line-height: 1.2;
+    }
 }
 
 .logo__theme_blue {
     color: var(--brand-color);
 }
-
-// .footer__box {
-//     flex-grow: 1;
-// }
 
 .footer__logo {
     display: block;
@@ -34,4 +36,12 @@ font-size: 24px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+   .footer__logo {
+        font-size: 26px;
+    line-height: 1.2;
+    text-align: start;
+    }
 }
