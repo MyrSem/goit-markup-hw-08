@@ -198,8 +198,8 @@ textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -322,8 +322,10 @@ textarea {
 }
 
 .contact__checkbox-label {
-  font-size: 14px;
-  line-height: 1.71;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -496,6 +498,25 @@ textarea {
   .mobile-menu-btn {
     display: none;
   }
+}
+
+.site-nav__link_current {
+  color: var(--brand-color);
+}
+
+.site-nav__link_current::after {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: var(--brand-color);
+  border-radius: 2px;
+}
+
+.mobile-menu__link_current {
+  color: var(--brand-color);
 }
 
 .hero {
@@ -791,8 +812,9 @@ textarea {
 
 .portfolio__btn {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 25px;
 }
 
 .overbtn-item {
@@ -823,20 +845,12 @@ textarea {
   background: var(--brand-color);
 }
 
-.overbtn + .overbtn {
-  margin-left: 8px;
-}
-
-.portfolio__work {
-  display: flex;
-  flex-basis: calc((100% - 90px) / 3);
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+.overbtn:not(:last-child) {
+  margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .portfolio__item {
-  margin-left: 30px;
   margin-top: 30px;
 }
 

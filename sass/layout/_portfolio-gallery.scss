@@ -1,7 +1,8 @@
 .portfolio__btn {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 25px;
 }
 
 .overbtn-item {
@@ -37,22 +38,27 @@
     background: var(--brand-color);
 }
 
-.overbtn {
-    & + & {
-    margin-left: 8px;
-    }
+.overbtn:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 15px;
 }
 
-.portfolio__work {
-    display: flex;
-    flex-basis: calc((100% - 90px) / 3);
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-}
+// .overbtn {
+//     & + & {
+//     margin-left: 8px;
+//     }
+// }
+
+//  {
+//     display: flex;
+//     flex-basis: calc((100% - 90px) / 3);
+//     flex-wrap: wrap;
+//     margin-left: -30px;
+//     margin-top: -30px;
+// }
 
 .portfolio__item {
-    margin-left: 30px;
+    // margin-left: 30px;
     margin-top: 30px;
 }
 
