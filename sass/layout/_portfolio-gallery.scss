@@ -2,10 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 
     @media screen and (min-width: 768px) {
         justify-content: center;
+        margin-bottom: 30px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -48,13 +49,19 @@
 
 .overbtn:not(:last-child) {
     margin-right: 8px;
-    margin-bottom: 15px;
 }
 
-@media screen and (min-width: 768px) {
-    .portfolio__work {
+@media screen and (max-width: 767px) {
+.overbtn:nth-child(-n + 3) {
+    margin-bottom: 15px;
+}
+}
+
+.portfolio__work {
+    @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+        margin: -15px;
     }
 }
 
@@ -66,18 +73,9 @@
 }
 
 .portfolio__item {
-    margin-top: 30px;
-
     @media screen and (min-width: 1200px) {
-        margin-left: 30px;
         width: calc((100% - 3 * 30px) / 3);
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .portfolio__work {
-    margin-left: -30px;
-    margin-top: -30px;
+        margin: 15px;
     }
 }
 

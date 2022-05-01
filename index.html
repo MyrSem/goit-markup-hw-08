@@ -38,7 +38,7 @@
           </ul>
         </nav>
         <ul class="auth-nav">
-          <li class="auth-nav__item auth-nav__item_mail">
+          <li class="auth-nav__item">
             <a href="mailto:info@devstudio.com" class="auth-nav__link"
               >
               <svg class="auth-nav__icon" width="16" height="16">
@@ -46,7 +46,7 @@
               </svg>info@devstudio.com  
             </a>
           </li>
-          <li class="auth-nav__item auth-nav__item_tel">
+          <li class="auth-nav__item">
             <a href="tel:+380961111111" class="auth-nav__link"
               >
               <svg class="auth-nav__icon" width="16" height="16">
@@ -104,11 +104,13 @@
     </header>
     <main>
       <section class="hero">
+        <div class="container">
           <h1 class="hero__title">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
           <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
+        </div>
       </section>
       <section class="section">
         <div class="container about__container">
@@ -190,12 +192,12 @@
           <ul class="team">
             <li class="team__item">
               <picture>
-                <source srcset="./images/employee1.webp 1x, ./images/employee1@2x.webp 2x" media="(min-width: 1200px)" sizes="(max-width: 270px)" type="image/webp">
-                <source srcset="./images/employee1.jpg 1x, ./images/employee1@2x.jpg 2x" media="(min-width: 1200px)" sizes="(max-width: 270px)">
-                <source srcset="./images/employee1.webp 1x, ./images/employee1@2x.webp 2x" media="(min-width: 768px)" sizes="(max-width: 354px)" type="image/webp">
-                <source srcset="./images/employee1.jpg 1x, ./images/employee1@2x.jpg 2x" media="(min-width: 768px)" sizes="(max-width: 354px)">
-                <source srcset="./images/employee1.webp 1x, ./images/employee1@2x.webp 2x" media="(max-width: 767px)" sizes="(max-width: 450px)" type="image/webp">
-                <source srcset="./images/employee1.jpg 1x, ./images/employee1@2x.jpg 2x" media="(max-width: 767px)" sizes="(max-width: 450px)">
+                <source srcset="./images/employee1.webp 1x, ./images/employee1@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/employee1.jpg 1x, ./images/employee1@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/employee1.webp 1x, ./images/employee1@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/employee1.jpg 1x, ./images/employee1@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/employee1.webp 1x, ./images/employee1@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                <source srcset="./images/employee1.jpg 1x, ./images/employee1@2x.jpg 2x" media="(max-width: 767px)">
               <img class="team__img" src="./images/employee1.jpg" alt="Игорь Демьяненко" />
               </picture>
               <div class="team__box">
@@ -234,12 +236,12 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/employee2.webp 1x, ./images/employee2@2x.webp 2x" media="(min-width: 1200px)" sizes="(max-width: 270px)" type="image/webp">
-                <source srcset="./images/employee2.jpg 1x, ./images/employee2@2x.jpg 2x" media="(min-width: 1200px)" sizes="(max-width: 270px)">
-                <source srcset="./images/employee2.webp 1x, ./images/employee2@2x.webp 2x" media="(min-width: 768px)" sizes="(max-width: 354px)" type="image/webp">
-                <source srcset="./images/employee2.jpg 1x, ./images/employee2@2x.jpg 2x" media="(min-width: 768px)" sizes="(max-width: 354px)">
-                <source srcset="./images/employee2.webp 1x, ./images/employee2@2x.webp 2x" media="(max-width: 767px)" sizes="(max-width: 450px)" type="image/webp">
-                <source srcset="./images/employee2.jpg 1x, ./images/employee2@2x.jpg 2x" media="(max-width: 767px)" sizes="(max-width: 450px)">
+                <source srcset="./images/employee2.webp 1x, ./images/employee2@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/employee2.jpg 1x, ./images/employee2@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/employee2.webp 1x, ./images/employee2@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/employee2.jpg 1x, ./images/employee2@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/employee2.webp 1x, ./images/employee2@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                <source srcset="./images/employee2.jpg 1x, ./images/employee2@2x.jpg 2x" media="(max-width: 767px)">
               <img class="team__img" src="./images/employee2.jpg" alt="Ольга Репина" />
               </picture>
               <div class="team__box">
@@ -279,12 +281,12 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/employee3.webp 1x, ./images/employee3@2x.webp 2x" media="(min-width: 1200px)" sizes="(max-width: 270px)" type="image/webp">
-                <source srcset="./images/employee3.jpg 1x, ./images/employee3@2x.jpg 2x" media="(min-width: 1200px)" sizes="(max-width: 270px)">
-                <source srcset="./images/employee3.webp 1x, ./images/employee3@2x.webp 2x" media="(min-width: 768px)" sizes="(max-width: 354px)" type="image/webp">
-                <source srcset="./images/employee3.jpg 1x, ./images/employee3@2x.jpg 2x" media="(min-width: 768px)" sizes="(max-width: 354px)">
-                <source srcset="./images/employee3.webp 1x, ./images/employee3@2x.webp 2x" media="(max-width: 767px)" sizes="(max-width: 450px)" type="image/webp">
-                <source srcset="./images/employee3.jpg 1x, ./images/employee3@2x.jpg 2x" media="(max-width: 767px)" sizes="(max-width: 450px)">
+                <source srcset="./images/employee3.webp 1x, ./images/employee3@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/employee3.jpg 1x, ./images/employee3@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/employee3.webp 1x, ./images/employee3@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/employee3.jpg 1x, ./images/employee3@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/employee3.webp 1x, ./images/employee3@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                <source srcset="./images/employee3.jpg 1x, ./images/employee3@2x.jpg 2x" media="(max-width: 767px)">
               <img class="team__img" src="./images/employee3.jpg" alt="Николай Тарасов" />
               </picture>
               <div class="team__box">
@@ -324,12 +326,12 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/employee4.webp 1x, ./images/employee4@2x.webp 2x" media="(min-width: 1200px)" sizes="(max-width: 270px)" type="image/webp">
-                <source srcset="./images/employee4.jpg 1x, ./images/employee4@2x.jpg 2x" media="(min-width: 1200px)" sizes="(max-width: 270px)">
-                <source srcset="./images/employee4.webp 1x, ./images/employee4@2x.webp 2x" media="(min-width: 768px)" sizes="(max-width: 354px)" type="image/webp">
-                <source srcset="./images/employee4.jpg 1x, ./images/employee4@2x.jpg 2x" media="(min-width: 768px)" sizes="(max-width: 354px)">
-                <source srcset="./images/employee4.webp 1x, ./images/employee4@2x.webp 2x" media="(max-width: 767px)" sizes="(max-width: 450px)" type="image/webp">
-                <source srcset="./images/employee4.jpg 1x, ./images/employee4@2x.jpg 2x" media="(max-width: 767px)" sizes="(max-width: 450px)">
+                <source srcset="./images/employee4.webp 1x, ./images/employee4@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/employee4.jpg 1x, ./images/employee4@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/employee4.webp 1x, ./images/employee4@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/employee4.jpg 1x, ./images/employee4@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/employee4.webp 1x, ./images/employee4@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                <source srcset="./images/employee4.jpg 1x, ./images/employee4@2x.jpg 2x" media="(max-width: 767px)">
               <img class="team__img" src="./images/employee4.jpg" alt="Михаил Ермаков" />
               </picture>
               <div class="team__box">
